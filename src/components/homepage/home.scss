@@ -1,0 +1,223 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .sec1{
+            flex:2;
+           .content{
+            width: 80%;
+            height: 100%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            gap: 20px;
+    
+            .title{
+                color:#9BCDF0;
+                font-size: 40px;
+                font-family: Inter, sans-serif;
+                
+            }
+            p{
+                width: 50%;
+            }
+            .btn{
+                background: #C1E8B1;
+                padding:10px ;
+                width: 40%;
+                border-radius: 12px;
+                cursor: pointer;
+                border: none;
+            }
+           }
+    
+        }
+        .sec2{
+            flex:1
+    
+        }
+    }
+   .doctors{
+    background: #E6F6FE;
+    display: flex;
+width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    h1{
+        font-family: Roboto,sans-serif;
+        font-weight: 100;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    p{
+        width: 30%;
+        text-align: center;
+    }
+    .members{
+        list-style: none;
+        display: flex;
+        margin-top: 40px;
+        li{
+            position: relative;
+            padding: 0px 5px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .graph{
+                position: absolute;
+                background-color: white;
+                padding: 10px;
+                text-align: center;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%,0);
+                width: fit-content;
+                border-radius: 10px;
+                 background: url('../../assets/Rectangle\ 679 (1).png') no-repeat center center;
+                 background-size: cover;
+                h1{
+                    white-space: nowrap;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+                
+
+            }
+            .graph2{
+                background: url('../../assets/Rectangle\ 679.png') no-repeat center center;
+            }
+        }
+
+    }
+    .arrows{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin:20px auto;
+    }
+   }
+   .services{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        li{
+            .card{
+                background: #E6F6FE;
+                padding: 20px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column ;
+                align-items: flex-start;
+                gap: 10px;
+                img{
+                    max-width: 250px;
+                    margin: auto;
+                }
+                button{
+                    background: #59C12E;
+                    border-radius: 5px;
+                    padding:5px 10px;
+                    border: none;
+                    color: white;
+                    width: fit-content;
+
+                }
+                .row{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                p{
+                    width: 90%;
+
+                }
+                h1{
+                    color: #59C12E;
+                    margin-left: auto;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .arrows{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin-top: 20px;
+    }
+    .find-service{
+        background: #E6F6FE;
+        width: 100vw;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+       h1{
+        font-style: italic;
+        text-align: center;
+        line-height: 60px;
+        font-weight: 100;
+        
+       }
+       .search{
+        width: 100%;
+        background:  #E6F6FE;
+        
+        form{
+            margin: auto;
+            padding: 20px;
+                width:30%;
+                height: 60px;
+                position: relative;
+                border-radius: 10px;
+                background-color: rgba(255,255,255,.8);
+                border: none;
+                input[type='text']{
+                    border: none;
+                    border-radius: 40px;
+                    height: 100%;
+                    background: transparent;
+                }
+                .form-group{
+                    
+                    position: absolute;
+                    top:50%;
+                    transform: translate(0,-50%);
+                padding: 0 10px;
+                    left:0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+              }
+    }
+    }
+   
+   }
+   .clients{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+h1{
+    font-style: italic;
+
+}
+   }
+}
