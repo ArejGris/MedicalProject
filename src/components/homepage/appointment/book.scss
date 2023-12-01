@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Inter&family=Nanum+Gothic+Coding&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&family=Readex+Pro:wght@200;400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,100&display=swap');
+
+.book{
+    background-color: #e6f6feb9;
+    height: auto;
+    h1{
+        font-size: 25px;
+     font-family: 'Roboto';
+     font-style: italic;
+     font-weight: 100;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .map{
+position: relative;
+iframe{
+    width: 100%;
+}
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            padding-left: 0px;}
+            li.card{
+                border: none;
+                margin-bottom: 1rem;
+                box-shadow: 1px 2px 8px rgba(0,0,0,.19);
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .icon{
+                    border-radius: 50%;
+                    background-color: #1376F8;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                }
+                .graph{
+                    margin-left: 1rem;
+                    h1{
+                        font-size: 30px;
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        font-style: normal;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    @media screen and (max-width:700px){
+                        h1{
+                            font-size: 20px;
+                        }
+                        
+                    }
+                }
+
+            }
+            li.card1{
+                position: absolute;
+                bottom: 0px;
+                left:10%;
+                transform: translate(-5%,0);
+                .icon{
+                    background-color: #25B4F8;
+                }
+            }
+        
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        .form{
+            max-width: 400px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-group{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            label{
+                font-family: 'Roboto';
+            }
+            input,textarea,.dropdown:not(.inside){
+                width: 100%;
+                padding: 10px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 1px 2px 8px rgba(0,0,0,.19);
+                border: none;
+            }
+            textarea{
+                border: none;
+                height: 170px
+            }
+            .dropdown{
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    width: 100%;
+                }
+            }
+            .btn{
+                width: 50%;
+            }
+            .input{
+                position: relative;
+                width: 100%;
+                input{
+                    
+                    width: 100%;
+                    padding-left: 20px;
+                    padding-right: 0px;
+                }
+                input::placeholder{
+                    text-align: center;
+                    padding-right: 10px;
+
+                }
+                .dropdown{
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                }
+
+            }
+        }
+        .top{
+            flex: 50%;
+            width: 50%;
+            input{
+                width: 90%;
+            }
+        }
+    }
+}

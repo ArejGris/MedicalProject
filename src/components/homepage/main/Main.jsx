@@ -1,7 +1,8 @@
 
-import photo from '../../assets/vbn 1.png'
+import photo from '../../../assets/vbn 1.png'
 const Main = () => {
     return ( <div className='main'>
+        
         <div className="sec1">
             <div className="content">
                 
@@ -15,7 +16,7 @@ consequat. </p>
 
             </div>
         </div>
-        <div className="sec2">
+        <div className="sec2 ">
             <img src={photo} alt="" />
 
         </div>

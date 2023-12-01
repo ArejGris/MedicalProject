@@ -1,0 +1,123 @@
+.doctors{
+    background: #E6F6FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    h1{
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        margin-bottom: 10px;
+        color: black;
+        text-align: left;
+    }
+    p{
+        max-width: 50%;
+        color: black;
+        text-align: center;
+    }
+    .members{
+        width: 90vw;
+        margin-top: 40px;
+        padding-bottom: 7rem;
+        .swiper-wrapper{
+            .slide{
+                max-width: 300px;
+                position: relative;
+                padding: 0px 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .graph{
+                    width: 80%;
+                    position: absolute;
+                    color: white;
+                    padding: 10px;
+                    text-align:left;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    border-radius: 10px;
+                     background: url('../../../assets/Rectangle\ 679 (1).png') no-repeat center center;
+                     background-size: cover;
+                    h1{
+                        
+                    color: white;
+                        white-space: nowrap;
+                        font-weight: 700;
+                    }
+                    p{
+                        color: white;
+                        white-space: nowrap;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    @media screen and (max-width:1350px){
+                        h1{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    @media screen and (max-width:1050px){
+                        h1{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    
+    
+                }
+                .graph2{
+                    background: url('../../../assets/Rectangle\ 679.png') no-repeat center center;
+                    background-size: cover;
+                }
+            }
+
+        }
+        @media screen and (min-width:1222px){
+            .swiper-wrapper{
+                justify-content: center;
+            }    
+        }
+        .swiper-button-prev,.swiper-button-next{
+            top: auto;
+            bottom: 5%;
+            opacity: 1;
+        }
+        .swiper-button-prev{
+            left: 40%; 
+            content: '';
+        }
+        .swiper-button-next{
+            right:  40%;
+            content: '';
+        }
+        @media screen and (max-width:422px){
+            .swiper-button-prev{
+                left: 30%; 
+                content: '';
+            }
+            .swiper-button-next{
+                right:  30%;
+                content: '';
+            }
+        }
+        .swiper-button-prev::after,.swiper-button-next::after{
+            content: '';
+        }
+
+    }
+    .arrows{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin:20px auto;
+    }
+   }

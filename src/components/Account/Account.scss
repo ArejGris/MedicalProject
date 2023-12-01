@@ -1,0 +1,133 @@
+.account{
+    min-height: 100vh;
+    .left{
+        min-height: 100vh;
+        height: 100%;
+        padding: 20px;
+        padding-top: 5rem;
+background-color: #74BCEE;
+display: flex;
+flex-direction: column;
+align-items: center;
+.user{
+    border-radius: 50%;
+
+    img{
+        width: 100px;
+    }
+}
+ul{
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+      li{
+        padding: 10px;
+        margin: 20px 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #E6F6FE;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            
+        color: black;
+        }
+      }
+      @media screen and (max-width:400px){
+        li{
+            margin: 20px 0px;
+        }
+      }
+    
+    }
+    }
+   
+    .right{
+        margin: 10px;
+        min-height: 100vh;
+        overflow: scroll;
+        form{
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100px;
+                background-color: gray;
+                border-radius: 50%;
+            }
+            .form-group{
+                width: 60%;
+                display: flex;
+                margin:20px auto ;
+                label{
+                  width: 25%;
+                  font-weight: 500;
+                  white-space: nowrap;
+                }
+              .input{
+
+                position: relative;
+                width: 100%;
+                input{
+                    border-radius: 10px;
+                    padding: 5px;
+                    width: 100%;
+                }
+                input::placeholder{
+                    text-align: center;
+                    color: black;
+                }
+                .mdi.lefticon{
+                    position: absolute;
+                    left: 10px;
+                    font-size: 20px;
+
+                }
+                .mdi.righticon{
+                    position: absolute;
+                   right: 10px;
+                    font-size: 20px;
+                    
+                }
+              }
+            }
+            
+    @media screen and (max-width:500px){
+        .form-group{
+            width: 100%;
+        }
+    }
+            .btn{
+                background-color: #C1E8B1;
+                color: white;
+                width: 100%;
+            }
+        }
+      
+    }
+    @media screen and (max-width:500px){
+        .left{
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .left1{
+            position:fixed;
+            width:100px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background-color: transparent;
+        }
+
+        .col-7{
+            width: 100vw;
+        }
+        
+    }
+  
+}

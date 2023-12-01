@@ -1,0 +1,64 @@
+.bg{
+    
+    background-color: #9BCDF0;
+}
+.bg1{
+    background-color: white;
+}
+.questions{
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 100;
+    }
+    p{
+        width:60%;
+        text-align: center;
+    }
+    .card{
+        max-width: 50%;
+        margin-bottom: 2rem;
+        padding: 10px;
+        background-color: #1376F8;
+        color: white;
+        .card-head{
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+        .divider{
+            width: 100%;
+            height: 1px;
+            background-color: white;
+
+
+        }
+    }
+
+    ul{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li{
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            margin-bottom: 1rem;
+            width: 100%;
+
+        }
+    }
+    @media screen and (max-width:512px){
+        .card{
+            max-width: 100%;
+        }
+        ul{
+            width: 100%;
+        }
+    }
+   }

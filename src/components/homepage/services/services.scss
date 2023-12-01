@@ -1,0 +1,150 @@
+.services{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .swiper{
+        width: 90vw;
+    padding-bottom: 7rem;
+        overflow: hidden;
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        .swiper-wrapper{
+            
+            .swiperSlide{
+                max-width: 300px;
+                .card{
+                    border: none;
+                    background: #E6F6FE;
+                    padding: 20px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column ;
+                    align-items: flex-start;
+                    gap: 10px;
+                    img{
+                        max-width: 100%;
+                        margin: auto;
+                        width: 100%;
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        background: #59C12E;
+                        border-radius: 5px;
+                        padding:5px 10px;
+                        border: none;
+                        color: white;
+                        width: fit-content;
+                
+                    }
+                    .myrow{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        h4{font-size: 20px;}
+                    }
+                    p{
+                        width: 90%;
+                
+                    }
+                    h1{
+                        margin-top: -2rem;
+                        color: #59C12E;
+                        margin-left: auto;
+                        font-size: 40px;
+                    }
+                }
+               
+            }
+        }
+        @media screen and (min-width:1222px){
+            .swiper-wrapper{
+                justify-content: center;
+            }    
+        }
+        .swiper-button-prev,.swiper-button-next{
+            bottom: 5%;
+            top: auto;
+            opacity: 1;
+        }
+        .swiper-button-prev{
+            left: 40%; 
+            content: '';
+        }
+        .swiper-button-next{
+            right:  40%;
+            content: '';
+        }
+        @media screen and (max-width:422px){
+            .swiper-button-prev{
+                left: 30%; 
+                content: '';
+            }
+            .swiper-button-next{
+                right:  30%;
+                content: '';
+            }
+        }
+        .swiper-button-prev::after,.swiper-button-next::after{
+            content: '';
+        }
+
+    }
+   
+    .find-service{
+        background: #E6F6FE;
+        width: 100vw;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+       a{ text-decoration: none;
+       h1{
+        font-style: italic;
+        text-align: center;
+        line-height: 60px;
+        font-weight: 100;
+        
+       }}
+       .search{
+        width: 100%;
+        background:  #E6F6FE;
+        
+        form{
+            margin: auto;
+            padding: 20px;
+                width:30%;
+                height: 60px;
+                position: relative;
+                border-radius: 10px;
+                background-color: rgba(255,255,255,.8);
+                border: none;
+                input[type='text']{
+                    border: none;
+                    border-radius: 40px;
+                    height: 100%;
+                    background: transparent;
+                }
+                .form-group{
+                    
+                    position: absolute;
+                    top:50%;
+                    transform: translate(0,-50%);
+                padding: 0 10px;
+                    left:0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+              }
+              @media screen and (max-width:600px){
+                form{
+                    width: 90%;
+                }
+                
+              }
+    }
+    }
+   
+   }

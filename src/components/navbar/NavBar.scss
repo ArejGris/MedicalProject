@@ -2,15 +2,19 @@
     background-color:#E6F6FE; 
     height: 60px; 
     width: 100vw;
+    overflow: hidden;
     color: black;
-    
-    .navbar{
+    display: flex;
+    justify-content: center;
+    .navbar1{
         height: 100%;
         width:80%;
         margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    
         ul.links{
           width: auto;
           list-style: none;
@@ -22,10 +26,9 @@
               margin-left: 1rem;
           }
         }
-        form{
-      padding: 5px 10px;
+        .form{
+      padding:10px;
           width: fit-content;
-          height: 50%;
           position: relative;
           border-radius: 40px;
           background-color: rgba(255,255,255,.8);
@@ -41,7 +44,7 @@
               position: absolute;
               top:50%;
               transform: translate(0,-50%);
-          padding: 0 10px;
+          padding:0 10px;
               left:0;
               width: 100%;
               display: flex;
@@ -49,13 +52,65 @@
           }
         }
         .logo{
-          height: 100%;
+          width: auto;
           color:#9BCDF0;
           display: flex;
           align-items: center;
+          text-decoration: none;
           span{
               color:#59C12E
           }
+         
+        }
+        
+       }
+      
+      button{
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+      }
+      .menu{
+        z-index: 99;
+        background: #E6F6FE;
+        padding: 10px;
+        position: absolute;
+        top:10%;
+        left: 10%;
+        width: 150px;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 0px;
+            li{
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px 0px;
+                color:#9BCDF0;
+                text-shadow: 0px 1px 4px rgba(0,0,0,.1);
+                font-weight: 900;
+                border-bottom: 1px solid #9BCDF0;
+            }
         }
       }
 }
+@media screen and (max-width:450px){
+ .mynav{
+  height: 140px;
+   .navbar1{ 
+   flex-wrap: wrap;
+   .form{
+     order:1;
+     flex:0 0 100%
+     }
+     .logo{
+      width: 50%;
+    }
+   }
+ 
+}
+}
+
